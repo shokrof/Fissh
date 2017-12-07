@@ -15,7 +15,17 @@ Fissh is tool for fixing corrupted files copied over ssh.
 Fix files assumes the input file to be list of equal size chunks. the chunk size equals to CorrectChunk size.
 Fix files overwrite chunk at ChunkIndex with the CorrectChunk.
 ### clean
-1. clean temporary files 
+1. clean temporary files
+### CompareAndFix
+#### Input
+1. Input File to be fixed: filename
+2. Server md5sumList
+3. Client md5sumList
+#### Steps
+1. compare md5sums in both lists
+2. scp chunks for corrupted chunks
+3. fix corrupted chunks
+
 ### Fissh
 #### Input:
 1. File path on the client.
