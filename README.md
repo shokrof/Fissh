@@ -13,7 +13,7 @@ Fissh is tool for fixing corrupted files copied over ssh.
 ### createMd5sumsList
 1. split the file into chunk(10M). chunks will be saved on /tmp/Fissh.chunks.randomtext
 2. calculate md5sum for each chunk
-3. output list in the format: chunkpath \t md5sum
+3. output list in the format: md5sum \t chunkpath
 ### FixFile
 #### Input
 1. Input File to be fixed: filename
